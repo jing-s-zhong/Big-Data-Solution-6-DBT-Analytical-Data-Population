@@ -19,12 +19,12 @@ cd Big-Data-Solution-6-DBT-Analytical-Data-Population
 cd dbt_demo
 ```
 
-### Configure snowfalke connector
+### Configure snowflake connector
 ```
 ```
 
 
-### Compile, Run or Test the prject
+### Compile, Run or Test the project
 
 ```
 dbt compile

@@ -1,0 +1,105 @@
+
+version: 2
+
+macros:
+  - name: generate_data_date
+    description: "Populate the dimension data of the data date"
+
+models:
+  - name: dim_platform
+    description: "Dimension data of the platform"
+    columns:
+      - name: platform_id
+        description: Primary key of the table
+        tests:
+          - unique
+          - not_null
+      - name: platform_type
+        description: Unique key of the table
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_organization
+    description: "Dimension data of the organization"
+    columns:
+      - name: organization_id
+        description: Primary key of the table
+        tests:
+          - unique
+          - not_null
+      - name: short_name
+        description: Unique key of the table
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_person
+    description: "Dimension data of the person"
+    columns:
+      - name: person_id
+        description: Primary key of the table
+        tests:
+          - unique
+          - not_null
+
+  - name: fact_contact
+    description: "Fact data of the contact"
+    columns:
+      - name: person_contact_id
+        description: Primary key of the table
+        tests:
+          - unique
+          - not_null
+          
+sources:
+  - name: reference
+    description: Reference data of the project.
+    database: int
+    tables:
+      - name: platform
+        columns:
+          - name: platform_id
+            description: Primary key of the table
+            tests:
+              - unique
+              - not_null
+          - name: platform_type
+            description: Unique key of the table
+            tests:
+              - unique
+              - not_null
+
+      - name: organization
+        columns:
+          - name: organization_id
+            description: Primary key of the table
+            tests:
+              - unique
+              - not_null
+          - name: short_name
+            description: Unique key of the table
+            tests:
+              - unique
+              - not_null
+
+  - name: ontology
+    description: Warehouse data of the project.
+    database: hst
+    tables:
+      - name: person
+        columns:
+          - name: person_id
+            description: Primary key of the table
+            tests:
+              - unique
+              - not_null
+
+      - name: person_contact
+        columns:
+          - name: person_contact_id
+            description: Primary key of the table
+            tests:
+              - unique
+              - not_null
+

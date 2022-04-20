@@ -1,4 +1,4 @@
-# Using DBT to Generate Analytical Data
+# Big Data Solution (6): Using DBT to Generate Analytical Data
 
 ### Install DBT
 

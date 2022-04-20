@@ -1,4 +1,4 @@
-# Big-Data-Solution-6-DBT-Analytical-Data-Population
+# Using DBT to Generate Analytical Data
 
 ### Install DBT
 

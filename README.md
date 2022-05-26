@@ -2,12 +2,12 @@
 
 ### Prerequisite
 
-Following projects are required to generate test data
+This project is alternative solution of the "Big-Data_Solution (4): Snowflake Data Mart Population", so following projects are needed to generate the prerequired test data.
 
 - Big-Data_Solution (1): Snowflake Data Lake Approach
 - Big-Data_Solution (2): Snowflake Data Process Pipelines
 - Big-Data_Solution (3): Snowflake Data Warehouse Load
-- Big-Data_Solution (4): Snowflake Data Mart Population
+- Big-Data_Solution (4): Snowflake Data Mart Population (Optional)
 
 
 ### Install DBT

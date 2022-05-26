@@ -1,5 +1,15 @@
 # Big Data Solution (6): Using DBT to Generate Analytical Data
 
+### Prerequisite
+
+Following projects are required to generate test data
+
+- Big-Data_Solution (1): Snowflake Data Lake Approach
+- Big-Data_Solution (2): Snowflake Data Process Pipelines
+- Big-Data_Solution (3): Snowflake Data Warehouse Load
+- Big-Data_Solution (4): Snowflake Data Mart Population
+
+
 ### Install DBT
 
 ```
